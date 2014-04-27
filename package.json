@@ -1,9 +1,10 @@
 {
-    "name": "bd2-rest-test-app",
-    "description": "BD2 rest server",
-    "version": "0.0.1",
-    "private": true,
-    "dependencies": {
-        "express": "3.x"
-    }
+  "name": "bd2-rest-test-app",
+  "description": "BD2 rest server",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "pg": "^3.0.3"
+  }
 }
