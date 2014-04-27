@@ -1,5 +1,5 @@
 var express = require('express'),
-    wine = require('./routes/orders');
+    orders_routes = require('./routes/orders');
      
 var app = express();
 
@@ -11,11 +11,11 @@ app.configure(function () {
  
 // available API
 
-app.get('/orders', wine.findAll);
-app.get('/orders/:id', wine.findById);
-app.post('/orders', wine.addorder);
-// app.put('/orders/:id', wine.updateorder);
-app.delete('/orders/:id', wine.deleteorder);
+app.get('/orders', orders_routes.findAll);
+app.get('/orders/:id', orders_routes.findById);
+app.post('/orders', orders_routes.addorder);
+// app.put('/orders/:id', orders_routes.updateorder);
+app.delete('/orders/:id', orders_routes.deleteorder);
  
 app.listen(3000);
 console.log('Listening on port 3000...');
